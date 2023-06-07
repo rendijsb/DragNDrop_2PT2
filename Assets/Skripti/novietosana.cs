@@ -24,7 +24,7 @@ public class novietosana : MonoBehaviour, IDropHandler {
                 xIzmeruStarp = Mathf.Abs(velkObjIzm.x - vietasIzm.x);
                 yIzmeruStarp = Mathf.Abs(velkObjIzm.y - vietasIzm.y);
                
-                if ((rotacijasStarpiba <= 6 || (rotacijasStarpiba >= 354 && rotacijasStarpiba <= 360)) && (xIzmeruStarp <= 0.3 && yIzmeruStarp <= 0.3))
+                if ((rotacijasStarpiba <= 6 || (rotacijasStarpiba >= 354 && rotacijasStarpiba <= 360)) && (xIzmeruStarp <= 0.2 && yIzmeruStarp <= 0.2))
                 {
                     objektuSkripts.vaiIstajaVieta = true;
                     eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;

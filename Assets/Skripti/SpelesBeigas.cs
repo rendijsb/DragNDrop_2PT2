@@ -8,7 +8,6 @@ public class SpelesBeigas : MonoBehaviour
     public Text TaimeraTeksts;
     public Objekti objektuSkripts;
     public Image Restart;
-    public Image sakums;
     public Image[] rezultataBildes;
     private bool spelePabeigta;
     private float spelesTaimeris = 0f;
@@ -21,7 +20,6 @@ public class SpelesBeigas : MonoBehaviour
         {
             rezultataBildes.gameObject.SetActive(false);
             TaimeraTeksts.gameObject.SetActive(false);
-            sakums.gameObject.SetActive(false);
             Restart.gameObject.SetActive(false);
         }
     }
@@ -61,7 +59,6 @@ public class SpelesBeigas : MonoBehaviour
             {
                 rezultataBildes[i].gameObject.SetActive(true);
                 TaimeraTeksts.gameObject.SetActive(true);
-                sakums.gameObject.SetActive(true);
                 Restart.gameObject.SetActive(true);
             }
         }
